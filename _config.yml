@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "air" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Adem's Homepage"
 title_separator          : "-"
 name                     : &name "Adem Gashi"
@@ -58,7 +58,7 @@ author:
   # Social media
   artstation       : # Username
   bluesky          : # Replace this with you Bluesky username
-  facebook         : "https://www.facebook.com/adem.gashi.5891"
+  facebook         : "adem.gashi.5891"
   flickr           : # Username
   foursquare       : # Username
   goodreads        : # Username
