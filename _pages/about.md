@@ -7,51 +7,67 @@ redirect_from:
   - /about.html
 ---
 
-<div style="text-align:center; padding:40px 20px;">
+<div style="text-align:center; padding:35px 20px;">
 
-<h1>Adem Gashi</h1>
+<h1>Researching brain and cognitive aging across the adult lifespan</h1>
 
-<h3>PhD Candidate in Neuroscience | University of Geneva</h3>
-
-<p style="font-size:20px; max-width:800px; margin:auto;">
-Understanding why brains age differently and what shapes cognitive health across the adult lifespan.
+<p style="font-size:19px; max-width:780px; margin:auto;">
+How do vascular, metabolic, genetic, lifestyle, and environmental factors shape the way our brains and cognitive abilities change over time?
 </p>
 
 </div>
 
 ---
 
-## Welcome
+## Research Overview
 
-I am a PhD candidate in Neuroscience at the University of Geneva investigating how vascular and metabolic health shape trajectories of brain and cognitive aging across the adult lifespan.
+My research investigates how vascular and metabolic health modify trajectories of brain structure and cognitive function across the adult lifespan.
 
-My research integrates longitudinal neuroimaging, cognitive assessments, and biological markers, including blood based and genetic indicators, to understand how vascular risk, lifestyle, and environmental factors influence individual differences in brain structure and cognitive function over time.
+I integrate longitudinal MRI, cognitive assessments, and biological markers, including blood based and genetic indicators of vascular health, to better characterize individual differences in aging.
 
 ---
 
-## Research Interests
+## Research Themes
 
 <div style="display:flex; flex-wrap:wrap; gap:15px;">
 
-<div style="flex:1; min-width:220px; padding:20px; border-radius:12px; background:#f4f6f8;">
-<h3>🧠 Cognitive Aging</h3>
-<p>Understanding how cognitive abilities change throughout adulthood and older age.</p>
+<div style="flex:1; min-width:220px; padding:18px; border-radius:12px; background:#f4f6f8;">
+<h3>🧠 Brain Aging</h3>
+<p>Understanding how brain structure changes across adulthood and older age.</p>
 </div>
 
-<div style="flex:1; min-width:220px; padding:20px; border-radius:12px; background:#f4f6f8;">
-<h3>🔬 Neuroimaging</h3>
-<p>Investigating longitudinal changes in brain structure using MRI.</p>
+<div style="flex:1; min-width:220px; padding:18px; border-radius:12px; background:#f4f6f8;">
+<h3>📊 Cognitive Change</h3>
+<p>Studying individual differences in cognitive trajectories over time.</p>
 </div>
 
-<div style="flex:1; min-width:220px; padding:20px; border-radius:12px; background:#f4f6f8;">
-<h3>❤️ Vascular & Metabolic Health</h3>
-<p>Studying how health related risk factors influence brain aging trajectories.</p>
+<div style="flex:1; min-width:220px; padding:18px; border-radius:12px; background:#f4f6f8;">
+<h3>❤️ Health Modifiers</h3>
+<p>Examining vascular, metabolic, lifestyle, and environmental influences on aging.</p>
 </div>
 
-<div style="flex:1; min-width:220px; padding:20px; border-radius:12px; background:#f4f6f8;">
-<h3>📊 Longitudinal Modeling</h3>
-<p>Applying advanced statistical methods to understand dynamic change over time.</p>
+<div style="flex:1; min-width:220px; padding:18px; border-radius:12px; background:#f4f6f8;">
+<h3>📈 Longitudinal Methods</h3>
+<p>Using advanced statistical models to study dynamic change across time.</p>
 </div>
+
+</div>
+
+---
+
+## Current Focus
+
+<div style="padding:22px; border-left:5px solid #4a6fa5; background:#f8f9fb; border-radius:10px;">
+
+My current work focuses on longitudinal links between brain structure, vascular and metabolic risk, biological markers, and cognitive function. I am especially interested in why some individuals maintain cognitive health into older age, while others show accelerated decline.
+
+</div>
+
+---
+
+## Explore
+
+Use the navigation menu above to learn more about my publications, talks, teaching, research portfolio, and CV.</div>
 
 </div>
 
