@@ -107,6 +107,6 @@ Use the navigation menu above to learn more about my publications, research proj
 
 <h3>Let's Connect</h3>
 
-<p>I welcome opportunities for scientific collaboration and discussion in cognitive aging, neuroimaging, and longitudinal research.</p>
+<p>I welcome opportunities for scientific collaboration and discussion in cognitive neuroscience, neuroimaging, and longitudinal research.</p>
 
 </div>
