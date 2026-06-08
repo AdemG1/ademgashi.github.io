@@ -9,7 +9,7 @@ redirect_from:
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,400;9..144,0,600;9..144,1,400&display=swap" rel="stylesheet">
 
 <style>
   /* ---------- Scoped homepage styles ---------- */
@@ -18,24 +18,31 @@ redirect_from:
     --paper: #faf7f0;
     --mist: #eef2f6;
     --rule: #d8dde3;
-    --accent: #b04a3a;          /* warm rust — the "memorable" colour */
+    --accent: #b04a3a;          /* warm rust accent */
     --accent-soft: #c87a6a;
-    --primary: #4a6fa5;          /* matches your existing blue */
+    --primary: #4a6fa5;
     --primary-dark: #1e3a5f;
-    font-feature-settings: "kern", "liga", "calt";
   }
 
-  /* Display type: a refined serif for personality, body stays as theme default */
-  .home h2,
-  .home h3,
-  .home .display {
-    font-family: 'Fraunces', Georgia, 'Iowan Old Style', serif;
-    font-weight: 600;
-    letter-spacing: -0.01em;
+  /* ---------- Hero cover image ---------- */
+  .hero {
+    margin: 0 0 2rem;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px -12px rgba(15, 25, 45, .45);
+    background: #0a1228;
   }
+  .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 6s ease;
+  }
+  .hero:hover img { transform: scale(1.025); }   /* gentle, slow zoom */
 
+  /* ---------- Section headings (default font + accent bar) ---------- */
   .home h2 {
-    font-size: 1.55rem;
+    font-size: 1.5rem;
     margin: 2.4rem 0 1rem;
     color: var(--ink);
     position: relative;
@@ -50,26 +57,22 @@ redirect_from:
     border-radius: 2px;
   }
 
-  /* ---------- Welcome ---------- */
-  .welcome { max-width: 64ch; line-height: 1.7; color: #2d3a4a; }
-  .welcome .lede {
-    font-family: 'Fraunces', Georgia, serif;
-    font-size: 1.3rem;
-    line-height: 1.5;
-    color: var(--ink);
-    margin: 0 0 1rem;
-  }
-  .welcome p { font-size: 1.02rem; margin: 0 0 0.6rem; }
+  /* ---------- Welcome / overview ---------- */
+  .welcome { max-width: 70ch; line-height: 1.7; color: #2d3a4a; }
+  .welcome p { font-size: 1.05rem; margin: 0; }
 
-  /* ---------- Research themes (cards) ---------- */
+  /* ---------- Research themes (2x2, compact, equal-height) ---------- */
   .themes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 14px;
-    margin: 1.2rem 0 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 1rem 0 2rem;
+  }
+  @media (max-width: 600px) {
+    .themes { grid-template-columns: 1fr; }
   }
   .theme {
-    padding: 18px 18px 20px;
+    padding: 14px 16px 16px;
     border-radius: 10px;
     background: var(--mist);
     border: 1px solid transparent;
@@ -77,12 +80,14 @@ redirect_from:
                 border-color .25s ease, background .25s ease;
     opacity: 0;
     animation: fadeUp .6s ease forwards;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
   .theme:nth-child(1) { animation-delay: .05s; }
   .theme:nth-child(2) { animation-delay: .15s; }
   .theme:nth-child(3) { animation-delay: .25s; }
   .theme:nth-child(4) { animation-delay: .35s; }
-
   .theme:hover {
     transform: translateY(-3px);
     background: #fff;
@@ -90,22 +95,25 @@ redirect_from:
     box-shadow: 0 8px 24px -10px rgba(30, 58, 95, .25);
   }
   .theme .icon {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     display: block;
-    margin-bottom: 6px;
     transition: transform .3s ease;
   }
   .theme:hover .icon { transform: scale(1.15) rotate(-4deg); }
-
-  .theme h3 { font-size: 1rem; margin: 0 0 4px; color: var(--ink); }
-  .theme p  { font-size: .9rem; line-height: 1.5; margin: 0; color: #4a5568; }
-
+  .theme h3 { font-size: .98rem; margin: 0; color: var(--ink); }
+  .theme p {
+    font-size: .87rem;
+    line-height: 1.45;
+    margin: 0;
+    color: #4a5568;
+    flex-grow: 1;
+  }
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(12px); }
     to   { opacity: 1; transform: translateY(0); }
   }
 
-  /* ---------- Featured question ---------- */
+  /* ---------- Featured question (KEEPS Fraunces serif) ---------- */
   .question-card {
     margin: 2rem 0;
     padding: 28px 32px;
@@ -116,7 +124,7 @@ redirect_from:
     overflow: hidden;
   }
   .question-card::before {
-    content: "\201C";              /* large decorative quote mark */
+    content: "\201C";
     font-family: 'Fraunces', Georgia, serif;
     position: absolute;
     top: -28px; right: 18px;
@@ -126,11 +134,12 @@ redirect_from:
     pointer-events: none;
   }
   .question-card .label {
-    font-size: .72rem;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: .75rem;
     text-transform: uppercase;
     letter-spacing: .14em;
     color: var(--accent);
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 8px;
   }
   .question-card .question {
@@ -142,7 +151,8 @@ redirect_from:
     margin: 0 0 .8rem;
   }
   .question-card .answer {
-    font-size: .95rem;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1rem;
     line-height: 1.6;
     color: #3a4756;
     margin: 0;
@@ -158,10 +168,7 @@ redirect_from:
     border: 1px solid transparent;
     transition: background .2s ease, border-color .2s ease;
   }
-  .projects details[open] {
-    background: #fff;
-    border-color: var(--rule);
-  }
+  .projects details[open] { background: #fff; border-color: var(--rule); }
   .projects summary {
     cursor: pointer;
     font-weight: 600;
@@ -208,7 +215,7 @@ redirect_from:
     border: 1px dashed var(--accent-soft);
   }
   .connect h3 { font-size: 1.3rem; margin: 0 0 8px; color: var(--ink); }
-  .connect p  {
+  .connect p {
     margin: 0 auto 14px;
     color: #4a5568;
     max-width: 52ch;
@@ -236,7 +243,7 @@ redirect_from:
   /* ---------- Respect reduced motion ---------- */
   @media (prefers-reduced-motion: reduce) {
     .theme, .theme .icon, .connect .links a,
-    .projects details, .projects summary::before {
+    .projects details, .projects summary::before, .hero img {
       transition: none;
       animation: none;
     }
@@ -246,9 +253,13 @@ redirect_from:
 
 <div class="home">
 
+  <div class="hero">
+    <img src="{{ site.baseurl }}/images/hero.jpg" alt="Glowing brain in a starry cosmos with three scientists observing it from a brain-shaped landscape">
+  </div>
+
+  <h2>Research Overview</h2>
   <div class="welcome">
-    <p class="lede">I study how vascular and metabolic health shape the way the brain and cognition change across adulthood.</p>
-    <p>Some people preserve sharp thinking well into later life; others decline earlier. A central thread in my work is how much of that difference is rooted in modifiable cardiovascular and metabolic factors — and how early in life they start to matter. To get at this, I combine longitudinal MRI, multi-domain cognitive assessments, blood-based biomarkers, and genetic indicators of vascular risk.</p>
+    <p>I am a PhD student in Neuroscience at the University of Geneva, studying how vascular and metabolic health modify changes in brain structure and cognitive function across the adult lifespan. My research integrates longitudinal MRI, cognitive assessments, and biological markers — including blood-based and genetic indicators of vascular health, lifestyle and environmental factors — to characterize individual aging.</p>
   </div>
 
   <h2>Research Themes</h2>
@@ -256,7 +267,7 @@ redirect_from:
     <div class="theme">
       <span class="icon">🧠</span>
       <h3>Brain Aging</h3>
-      <p>How brain structure changes across adulthood and into later life.</p>
+      <p>Structural brain changes across adulthood and later life.</p>
     </div>
     <div class="theme">
       <span class="icon">📊</span>
@@ -266,12 +277,12 @@ redirect_from:
     <div class="theme">
       <span class="icon">❤️</span>
       <h3>Health Modifiers</h3>
-      <p>Vascular, metabolic, lifestyle, and environmental influences on aging.</p>
+      <p>Vascular, metabolic, lifestyle, and environmental influences.</p>
     </div>
     <div class="theme">
       <span class="icon">📈</span>
       <h3>Longitudinal Methods</h3>
-      <p>Statistical models for studying dynamic change across time.</p>
+      <p>Statistical models for dynamic change over time.</p>
     </div>
   </div>
 
@@ -282,7 +293,7 @@ redirect_from:
   </div>
 
   <h2>Current Projects</h2>
-  <p style="font-size:.92rem; color:#5a6778; margin: -.4rem 0 1rem;">Click any project to learn more.</p>
+  <p style="font-size:.92rem; color:#5a6778; margin:-.4rem 0 1rem;">Click any project to learn more.</p>
   <div class="projects">
     <details>
       <summary>Brain iron accumulation and cognitive aging</summary>
