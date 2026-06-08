@@ -5,18 +5,7 @@ author_profile: true
 redirect_from:
   - /about/
   - /about.html
----
-
-<div style="text-align:center; padding:35px 20px;">
-
-<h1>Researching brain and cognitive aging across the adult lifespan</h1>
-
-<p style="font-size:19px; max-width:780px; margin:auto;">
-How do vascular, metabolic, genetic, lifestyle, and environmental factors shape the way our brains and cognitive abilities change over time?
-</p>
-
-</div>
-
+  
 ---
 
 ## Research Overview
