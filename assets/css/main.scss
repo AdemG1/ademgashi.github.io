@@ -41,3 +41,31 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* Custom footer styling */
+
+.page__footer {
+  padding: 0.3em 0 !important;
+  margin-top: 0.5em !important;
+  min-height: auto !important;
+}
+
+.page__footer-follow {
+  display: none !important;
+}
+
+.page__footer-copyright {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  font-size: 0.8em !important;
+  line-height: 1.2 !important;
+}
+
+.page__footer footer {
+  padding: 0 !important;
+}
+
+footer {
+  margin: 0 !important;
+  padding: 0 !important;
+}
