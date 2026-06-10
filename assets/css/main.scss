@@ -1,92 +1,86 @@
----
----
-
-/*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
- */
-
-@import
-    "vendor/breakpoint/breakpoint",
-
-    "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
-
-    "include/mixins",
-    "vendor/susy/susy",
-
-    "layout/reset",
-    "layout/base",
-
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
-
-    "layout/forms",
-
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-    "layout/json_cv",
-
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
-;
-
-/* --------------------------------
-   Custom Footer (Glass Style)
--------------------------------- */
+/* ==========================================
+   Apple Liquid Glass Footer
+========================================== */
 
 .page__footer {
-  margin-top: 0.75rem !important;
-  padding: 0.6rem 0 !important;
-
-  background: rgba(255, 255, 255, 0.55);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-
-  border-top: 1px solid rgba(255,255,255,0.4);
-  box-shadow: 0 -1px 12px rgba(0,0,0,0.03);
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0.5rem 0 1rem 0 !important;
 }
 
 .page__footer-follow {
   display: none !important;
 }
 
-.page__footer-copyright {
-  text-align: left !important;
-  font-size: 0.82rem;
-  line-height: 1.5;
-  color: #666;
-  padding: 0.2rem 0;
+.glass-footer {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 0.65rem 1rem;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.45) 0%,
+      rgba(255,255,255,0.15) 100%
+    );
+
+  backdrop-filter: blur(40px) saturate(200%);
+  -webkit-backdrop-filter: blur(40px) saturate(200%);
+
+  border: 1px solid rgba(255,255,255,0.5);
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.08),
+    inset 0 1px 1px rgba(255,255,255,0.9),
+    inset 0 -1px 1px rgba(255,255,255,0.25);
+
+  position: relative;
+
+  transition: all 0.25s ease;
 }
 
-.page__footer-copyright strong {
-  color: #222;
+.glass-footer::before {
+  content: "";
+
+  position: absolute;
+
+  top: 1px;
+  left: 1px;
+  right: 1px;
+  height: 45%;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.65),
+      rgba(255,255,255,0)
+    );
+
+  pointer-events: none;
+}
+
+.glass-footer:hover {
+  transform: translateY(-1px) scale(1.01);
+
+  box-shadow:
+    0 16px 40px rgba(0,0,0,0.12),
+    inset 0 1px 1px rgba(255,255,255,1);
+}
+
+.glass-footer,
+.glass-footer a,
+.glass-footer strong {
+  color: #111 !important;
+  text-decoration: none !important;
   font-weight: 600;
-  font-size: 0.95rem;
 }
 
-.page__footer-copyright em {
-  color: #777;
-  font-style: italic;
-}
-
-.page__footer-copyright a {
-  color: #8b1e1e;
-  text-decoration: none;
-  transition: opacity 0.2s ease;
-}
-
-.page__footer-copyright a:hover {
-  opacity: 0.7;
+.glass-footer a:hover {
+  opacity: 0.75;
 }
