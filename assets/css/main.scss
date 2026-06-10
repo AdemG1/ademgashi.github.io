@@ -42,12 +42,13 @@
     "vendor/font-awesome/brands"
 ;
 
-/* Custom footer styling */
+/* Custom Footer */
 
 .page__footer {
-  padding: 0.3em 0 !important;
-  margin-top: 0.5em !important;
-  min-height: auto !important;
+  border-top: 1px solid #e5e5e5;
+  padding: 1rem 0 !important;
+  margin-top: 1rem !important;
+  text-align: center;
 }
 
 .page__footer-follow {
@@ -55,17 +56,21 @@
 }
 
 .page__footer-copyright {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-  font-size: 0.8em !important;
-  line-height: 1.2 !important;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.8;
+  margin: 0 auto;
 }
 
-.page__footer footer {
-  padding: 0 !important;
+.page__footer-copyright em {
+  color: #777;
+  font-style: italic;
 }
 
-footer {
-  margin: 0 !important;
-  padding: 0 !important;
+.page__footer-copyright a {
+  text-decoration: none;
+}
+
+.page__footer-copyright a:hover {
+  text-decoration: underline;
 }
