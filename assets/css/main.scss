@@ -42,14 +42,20 @@
     "vendor/font-awesome/brands"
 ;
 
-/* ------------------------------
-   Custom Footer
------------------------------- */
+/* --------------------------------
+   Custom Footer (Glass Style)
+-------------------------------- */
 
 .page__footer {
-  border-top: 1px solid #e5e5e5;
-  padding: 1rem 0 !important;
-  margin-top: 1rem !important;
+  margin-top: 0.75rem !important;
+  padding: 0.6rem 0 !important;
+
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-top: 1px solid rgba(255,255,255,0.4);
+  box-shadow: 0 -1px 12px rgba(0,0,0,0.03);
 }
 
 .page__footer-follow {
@@ -58,15 +64,16 @@
 
 .page__footer-copyright {
   text-align: left !important;
-  font-size: 0.85rem;
-  line-height: 1.8;
+  font-size: 0.82rem;
+  line-height: 1.5;
   color: #666;
+  padding: 0.2rem 0;
 }
 
 .page__footer-copyright strong {
-  font-size: 1rem;
   color: #222;
   font-weight: 600;
+  font-size: 0.95rem;
 }
 
 .page__footer-copyright em {
@@ -77,8 +84,9 @@
 .page__footer-copyright a {
   color: #8b1e1e;
   text-decoration: none;
+  transition: opacity 0.2s ease;
 }
 
 .page__footer-copyright a:hover {
-  text-decoration: underline;
+  opacity: 0.7;
 }
