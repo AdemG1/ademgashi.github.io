@@ -57,20 +57,20 @@ body {
   padding: 0.8rem 2rem !important;
   border-radius: 999px;
 
-  /* Frosted transparency + strong blur (saturate boosts colors behind the glass) */
-  background: rgba(255, 255, 255, 0.55) !important;
-  -webkit-backdrop-filter: blur(24px) saturate(180%);
-  backdrop-filter: blur(24px) saturate(180%);
+  /* Thinner frost: more see through, stronger blur compensates for legibility */
+  background: rgba(255, 255, 255, 0.32) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+  backdrop-filter: blur(28px) saturate(190%);
 
   /* Glass rim: brighter on top, like light hitting a curved edge */
-  border: 1px solid rgba(255, 255, 255, 0.55) !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.85) !important;
+  border: 1px solid rgba(255, 255, 255, 0.45) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.75) !important;
 
   box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, 0.9),   /* internal top highlight */
-    inset 0 -1px 1px rgba(255, 255, 255, 0.25), /* soft inner bottom rim */
-    0 10px 30px rgba(0, 0, 0, 0.12),            /* floating depth */
-    0 2px 6px rgba(0, 0, 0, 0.06);
+    inset 0 1px 1px rgba(255, 255, 255, 0.8),   /* internal top highlight */
+    inset 0 -1px 1px rgba(255, 255, 255, 0.2),  /* soft inner bottom rim */
+    0 10px 30px rgba(0, 0, 0, 0.1),             /* floating depth */
+    0 2px 6px rgba(0, 0, 0, 0.05);
 
   overflow: hidden;
   transition:
@@ -94,8 +94,8 @@ body {
   border-radius: inherit;
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(255, 255, 255, 0.12) 45%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.1) 45%,
     rgba(255, 255, 255, 0) 65%
   );
   pointer-events: none;
@@ -112,7 +112,7 @@ body {
   background: linear-gradient(
     115deg,
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.28) 50%,
     rgba(255, 255, 255, 0) 100%
   );
   transform: rotate(8deg);
@@ -122,12 +122,12 @@ body {
 /* macOS style hover depth: bar lifts, shadow deepens, glass clears slightly */
 .page__footer:hover {
   transform: translateX(-50%) translateY(-3px);
-  background: rgba(255, 255, 255, 0.65) !important;
+  background: rgba(255, 255, 255, 0.45) !important;
   box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, 1),
-    inset 0 -1px 1px rgba(255, 255, 255, 0.3),
-    0 18px 44px rgba(0, 0, 0, 0.16),
-    0 4px 10px rgba(0, 0, 0, 0.08);
+    inset 0 1px 1px rgba(255, 255, 255, 0.95),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.25),
+    0 18px 44px rgba(0, 0, 0, 0.14),
+    0 4px 10px rgba(0, 0, 0, 0.07);
 }
 
 /* Hide the follow section as before */
@@ -135,49 +135,59 @@ body {
   display: none !important;
 }
 
-/* Footer text sits above the reflection layers */
+/* Footer text: bold, sits above the reflection layers */
 .glass-footer {
   position: relative;
   z-index: 1;
   text-align: center;
   font-size: 0.85rem;
+  font-weight: 700;
   line-height: 1.5;
-  color: #555;
+  color: rgba(60, 60, 67, 0.75); /* Apple secondary label color */
+  letter-spacing: 0.01em;
 }
 
-.glass-footer a {
-  color: #8b1e1e;
+/* Name and year in Apple system blue, the native Liquid Glass accent */
+.glass-footer a,
+.glass-footer .glass-year {
+  color: #007aff;
+  font-weight: 700;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
 
 .glass-footer a:hover {
   text-decoration: underline;
-  opacity: 0.85;
+  opacity: 0.8;
 }
 
 /* Dark theme variant (Academic Pages toggles html[data-theme="dark"]) */
 html[data-theme="dark"] .page__footer {
-  background: rgba(30, 30, 34, 0.5) !important;
+  background: rgba(28, 28, 32, 0.35) !important;
   border: 1px solid rgba(255, 255, 255, 0.12) !important;
   border-top: 1px solid rgba(255, 255, 255, 0.22) !important;
   box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, 0.15),
-    inset 0 -1px 1px rgba(255, 255, 255, 0.05),
+    inset 0 1px 1px rgba(255, 255, 255, 0.12),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.04),
     0 10px 30px rgba(0, 0, 0, 0.45);
 }
 
 html[data-theme="dark"] .page__footer::before {
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.12) 0%,
-    rgba(255, 255, 255, 0.04) 45%,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.03) 45%,
     rgba(255, 255, 255, 0) 65%
   );
 }
 
 html[data-theme="dark"] .glass-footer {
-  color: #c8c8cc;
+  color: rgba(235, 235, 245, 0.65);
+}
+
+html[data-theme="dark"] .glass-footer a,
+html[data-theme="dark"] .glass-footer .glass-year {
+  color: #0a84ff; /* Apple blue for dark mode */
 }
 
 /* Slightly tighter bar on small screens */
