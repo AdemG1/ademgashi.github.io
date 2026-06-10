@@ -42,13 +42,14 @@
     "vendor/font-awesome/brands"
 ;
 
-/* Custom Footer */
+/* ------------------------------
+   Custom Footer
+------------------------------ */
 
 .page__footer {
   border-top: 1px solid #e5e5e5;
   padding: 1rem 0 !important;
   margin-top: 1rem !important;
-  text-align: center;
 }
 
 .page__footer-follow {
@@ -56,10 +57,16 @@
 }
 
 .page__footer-copyright {
-  font-size: 0.9rem;
-  color: #666;
+  text-align: left !important;
+  font-size: 0.85rem;
   line-height: 1.8;
-  margin: 0 auto;
+  color: #666;
+}
+
+.page__footer-copyright strong {
+  font-size: 1rem;
+  color: #222;
+  font-weight: 600;
 }
 
 .page__footer-copyright em {
@@ -68,6 +75,7 @@
 }
 
 .page__footer-copyright a {
+  color: #8b1e1e;
   text-decoration: none;
 }
 
