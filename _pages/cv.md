@@ -11,13 +11,13 @@ redirect_from:
 
 <p>
   <a href="{{ base_path }}/files/CV_Adem_Gashi.pdf" target="_blank" class="btn btn--primary">
-    📄 View / Download CV
+    📄 Download CV
   </a>
 </p>
 
 <iframe
-  src="{{ base_path }}/files/CV_Adem_Gashi.pdf"
+  src="https://docs.google.com/gview?url=https://ademgashi.com/files/CV_Adem_Gashi.pdf&embedded=true"
   width="100%"
-  height="1100px"
+  height="900px"
   style="border: none;">
 </iframe>
