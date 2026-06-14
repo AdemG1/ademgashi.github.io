@@ -257,6 +257,7 @@ redirect_from:
     background-color: #2a2a2a !important;
   }
   .home, .hero { position: static; }
+  .home h2 { z-index: 0; }
 
   /* ---------- Dark mode overrides ---------- */
   html[data-theme="dark"] .home {
