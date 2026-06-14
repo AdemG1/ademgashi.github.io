@@ -205,6 +205,13 @@ redirect_from:
     color: #475160;
   }
 
+  /* ---------- Project hint line ---------- */
+  .projects-hint {
+    font-size: .92rem;
+    color: #5a6778;
+    margin: -.4rem 0 1rem;
+  }
+
   /* ---------- Connect ---------- */
   .connect {
     margin-top: 2.5rem;
@@ -238,6 +245,59 @@ redirect_from:
     color: #fff;
     border-color: var(--ink);
     transform: translateY(-1px);
+  }
+
+  /* ---------- Dark mode overrides ---------- */
+  html[data-theme="dark"] .home {
+    --ink: #f2f4f7;
+    --paper: #3a3a3a;
+    --mist: #404040;
+    --rule: #5a5a5a;
+    --accent: #e08a7a;        /* lifted rust so it reads on dark */
+    --accent-soft: #c87a6a;
+    --primary: #6f9ad4;
+    --primary-dark: #9bbce0;
+  }
+
+  html[data-theme="dark"] .welcome { color: #e6e9ed; }
+
+  html[data-theme="dark"] .theme {
+    background: var(--mist);
+  }
+  html[data-theme="dark"] .theme:hover {
+    background: #4a4a4a;
+    box-shadow: 0 8px 24px -10px rgba(0, 0, 0, .5);
+  }
+  html[data-theme="dark"] .theme p { color: #c4ccd6; }
+
+  html[data-theme="dark"] .question-card {
+    background: linear-gradient(135deg, #3f3f3f 0%, #363636 100%);
+  }
+  html[data-theme="dark"] .question-card .answer { color: #c8d0da; }
+
+  html[data-theme="dark"] .projects details { background: var(--mist); }
+  html[data-theme="dark"] .projects details[open] {
+    background: #4a4a4a;
+    border-color: var(--rule);
+  }
+  html[data-theme="dark"] .projects .project-body { color: #c4ccd6; }
+  html[data-theme="dark"] .projects summary { color: var(--ink); }
+  html[data-theme="dark"] .projects-hint { color: #b8c0ca; }
+
+  html[data-theme="dark"] .connect {
+    background: #3a3a3a;
+    border-color: var(--accent-soft);
+  }
+  html[data-theme="dark"] .connect p { color: #c4ccd6; }
+  html[data-theme="dark"] .connect .links a {
+    background: #4a4a4a;
+    border-color: var(--rule);
+    color: var(--ink);
+  }
+  html[data-theme="dark"] .connect .links a:hover {
+    background: var(--ink);
+    color: #2a2a2a;
+    border-color: var(--ink);
   }
 
   /* ---------- Respect reduced motion ---------- */
@@ -293,7 +353,7 @@ redirect_from:
   </div>
 
   <h2>Current Projects</h2>
-  <p style="font-size:.92rem; color:#5a6778; margin:-.4rem 0 1rem;">Click any project to learn more.</p>
+  <p class="projects-hint">Click any project to learn more.</p>
   <div class="projects">
     <details>
       <summary>Brain iron accumulation and cognitive aging</summary>
@@ -321,9 +381,9 @@ redirect_from:
     <h3>Let's connect</h3>
     <p>I'm always happy to discuss neuroimaging, longitudinal research, and brain &amp; cognitive aging — whether for collaboration, a question, or just a good scientific conversation.</p>
     <div class="links">
-      <a href="mailto:your.email@unige.ch">Email</a>
+      <a href="mailto:ademgashi@unige.ch">Email</a>
       <a href="https://orcid.org/0009-0000-1872-9391" target="_blank" rel="noopener">ORCID</a>
-      <a href="https://scholar.google.com/citations?user=IXUL7KIAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://scholar.google.com/citations?user=IXUL7KIAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
       <a href="https://www.linkedin.com/in/adem-gashi" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
