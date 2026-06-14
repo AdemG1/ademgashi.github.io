@@ -248,8 +248,9 @@ redirect_from:
   }
 
   /* ---------- Keep Follow dropdown above page content ---------- */
-  .author__urls-wrapper { position: relative; z-index: 100; }
-  .home { position: relative; z-index: 1; }
+  .author__urls-wrapper { position: relative; z-index: 1000; }
+  .author__urls-wrapper .author__urls { z-index: 1000 !important; }
+  .home, .hero { position: relative; z-index: 0; }
 
   /* ---------- Dark mode overrides ---------- */
   html[data-theme="dark"] .home {
