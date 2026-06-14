@@ -1,7 +1,15 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-collection: portfolio
+title: "Portfolio"
+permalink: /portfolio/
+author_profile: true
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+## Open Science
+
+I am committed to transparent and reproducible science. Research materials, analyses, and project resources are shared through the Open Science Framework (OSF).
+
+### Brain De-differentiation Across Aging
+
+This project investigates whether age related changes in regional brain volumes become increasingly shared across the adult lifespan and how vascular, metabolic, and genetic factors modify these trajectories.
+
+🔗 <a href="https://osf.io/5h3yn/" target="_blank">View Project on OSF</a>
