@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 <p style="font-size: 1.05em; color: #666; margin-bottom: 1.5em;">
-  View my complete Curriculum Vitae directly below, or download a PDF copy for offline access.
+  View my complete CV directly below, or download a PDF copy for offline access.
 </p>
 
 <p>
