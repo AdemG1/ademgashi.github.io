@@ -248,9 +248,15 @@ redirect_from:
   }
 
   /* ---------- Keep Follow dropdown above page content ---------- */
-  .author__urls-wrapper { position: relative; z-index: 1000; }
-  .author__urls-wrapper .author__urls { z-index: 1000 !important; }
-  .home, .hero { position: relative; z-index: 0; }
+  .author__urls-wrapper { position: relative; z-index: 9999; }
+  .author__urls.social-icons {
+    z-index: 9999 !important;
+    background-color: #fff !important;
+  }
+  html[data-theme="dark"] .author__urls.social-icons {
+    background-color: #2a2a2a !important;
+  }
+  .home, .hero { position: static; }
 
   /* ---------- Dark mode overrides ---------- */
   html[data-theme="dark"] .home {
