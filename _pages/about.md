@@ -247,6 +247,10 @@ redirect_from:
     transform: translateY(-1px);
   }
 
+  /* ---------- Keep Follow dropdown above page content ---------- */
+  .author__urls-wrapper { position: relative; z-index: 100; }
+  .home { position: relative; z-index: 1; }
+
   /* ---------- Dark mode overrides ---------- */
   html[data-theme="dark"] .home {
     --ink: #f2f4f7;
