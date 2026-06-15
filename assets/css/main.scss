@@ -42,33 +42,32 @@ body {
 }
 
 .page__footer {
-  position: fixed !important;
-  bottom: 0.75rem !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  width: calc(100% - 2rem) !important;
-  max-width: 1100px !important;
-  z-index: 100 !important;
+  position: fixed;
+  bottom: 0.9rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 2rem);
+  max-width: 1100px;
+  z-index: 100;
 
   margin: 0 !important;
-  padding: 0.55rem 1.5rem !important;
-  border-radius: 999px !important;
+  padding: 0.8rem 2rem !important;
+  border-radius: 999px;
 
-  background: rgba(255, 255, 255, 0.08) !important;
-  -webkit-backdrop-filter: blur(38px) saturate(220%) contrast(105%);
-  backdrop-filter: blur(38px) saturate(220%) contrast(105%);
+  background: rgba(255, 255, 255, 0.055) !important;
+  -webkit-backdrop-filter: blur(46px) saturate(260%) contrast(112%);
+  backdrop-filter: blur(46px) saturate(260%) contrast(112%);
 
-  border: 1px solid rgba(255, 255, 255, 0.32) !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.65) !important;
+  border: 1px solid rgba(255, 255, 255, 0.28) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.58) !important;
 
   box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, 0.75),
-    inset 0 -1px 1px rgba(255, 255, 255, 0.14),
-    0 12px 32px rgba(0, 0, 0, 0.08),
-    0 2px 8px rgba(0, 0, 0, 0.04);
+    inset 0 1px 1px rgba(255, 255, 255, 0.70),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.12),
+    0 10px 30px rgba(0, 0, 0, 0.08),
+    0 2px 6px rgba(0, 0, 0, 0.04);
 
-  overflow: hidden !important;
-
+  overflow: hidden;
   transition:
     transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1),
@@ -80,7 +79,6 @@ body {
   margin: 0 auto !important;
   padding: 0 !important;
   max-width: none !important;
-  text-align: center !important;
 }
 
 .page__footer::before {
@@ -88,60 +86,51 @@ body {
   position: absolute;
   inset: 0;
   border-radius: inherit;
-
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.34) 0%,
-      rgba(255, 255, 255, 0.10) 42%,
-      rgba(255, 255, 255, 0.02) 70%,
-      rgba(255, 255, 255, 0) 100%
-    );
-
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.075) 45%,
+    rgba(255, 255, 255, 0) 70%
+  );
   pointer-events: none;
 }
 
 .page__footer::after {
   content: "";
   position: absolute;
-  top: -70%;
-  left: -18%;
-  width: 40%;
-  height: 240%;
-
-  background:
-    linear-gradient(
-      115deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.32) 50%,
-      rgba(255, 255, 255, 0) 100%
-    );
-
-  transform: rotate(10deg);
+  top: -60%;
+  left: -10%;
+  width: 35%;
+  height: 220%;
+  background: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.22) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(8deg);
   pointer-events: none;
-  opacity: 0.75;
 }
 
 .page__footer:hover {
-  transform: translateX(-50%) translateY(-4px) scale(1.005) !important;
+  transform: translateX(-50%) translateY(-3px);
+  background: rgba(255, 255, 255, 0.035) !important;
+  -webkit-backdrop-filter: blur(56px) saturate(300%) contrast(118%);
+  backdrop-filter: blur(56px) saturate(300%) contrast(118%);
 
-  background: rgba(255, 255, 255, 0.04) !important;
-  -webkit-backdrop-filter: blur(48px) saturate(250%) contrast(110%);
-  backdrop-filter: blur(48px) saturate(250%) contrast(110%);
-
-  border: 1px solid rgba(255, 255, 255, 0.42) !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.82) !important;
+  border: 1px solid rgba(255, 255, 255, 0.36) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.75) !important;
 
   box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, 0.9),
-    inset 0 -1px 1px rgba(255, 255, 255, 0.18),
-    0 20px 48px rgba(0, 0, 0, 0.12),
-    0 4px 12px rgba(0, 0, 0, 0.06);
+    inset 0 1px 1px rgba(255, 255, 255, 0.90),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.16),
+    0 18px 44px rgba(0, 0, 0, 0.12),
+    0 4px 10px rgba(0, 0, 0, 0.06);
 }
 
 .page__footer:hover::after {
+  left: 12%;
   opacity: 1;
-  left: 10%;
   transition: left 0.55s ease, opacity 0.35s ease;
 }
 
@@ -150,15 +139,14 @@ body {
 }
 
 .glass-footer {
-  position: relative !important;
-  z-index: 2 !important;
-
-  text-align: center !important;
-  font-size: 0.70rem !important;
-  font-weight: 600 !important;
-  line-height: 1.35 !important;
-  color: rgba(60, 60, 67, 0.68) !important;
-  letter-spacing: 0.01em !important;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: 0.70rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: rgba(60, 60, 67, 0.75);
+  letter-spacing: 0.01em;
 }
 
 .glass-footer a,
@@ -166,64 +154,34 @@ body {
 .glass-footer a:visited,
 .glass-footer a:hover,
 .glass-footer a:active {
-  color: rgba(60, 60, 67, 0.68) !important;
-  font-size: 0.70rem !important;
-  font-weight: 600 !important;
-  text-decoration: none !important;
+  color: rgba(60, 60, 67, 0.75);
+  font-size: 0.70rem;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .glass-footer a:hover {
-  opacity: 0.78 !important;
+  opacity: 0.8;
 }
 
 html[data-theme="dark"] .page__footer {
   background: rgba(28, 28, 32, 0.16) !important;
-  border: 1px solid rgba(255, 255, 255, 0.14) !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.28) !important;
-
-  box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, 0.16),
-    inset 0 -1px 1px rgba(255, 255, 255, 0.05),
-    0 12px 34px rgba(0, 0, 0, 0.42);
-}
-
-html[data-theme="dark"] .page__footer:hover {
-  background: rgba(28, 28, 32, 0.10) !important;
-}
-
-html[data-theme="dark"] .page__footer::before {
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.12) 0%,
-      rgba(255, 255, 255, 0.04) 45%,
-      rgba(255, 255, 255, 0) 70%
-    );
 }
 
 html[data-theme="dark"] .glass-footer,
-html[data-theme="dark"] .glass-footer a,
-html[data-theme="dark"] .glass-footer a:link,
-html[data-theme="dark"] .glass-footer a:visited,
-html[data-theme="dark"] .glass-footer a:hover,
-html[data-theme="dark"] .glass-footer a:active {
+html[data-theme="dark"] .glass-footer a {
   color: rgba(235, 235, 245, 0.68) !important;
 }
 
 @media (max-width: 600px) {
+  .page__footer {
+    width: calc(100% - 1.2rem);
+    padding: 0.65rem 1.2rem !important;
+    bottom: 0.6rem;
+  }
+
   body {
     padding-bottom: 4.5rem;
-  }
-
-  .page__footer {
-    width: calc(100% - 1.2rem) !important;
-    padding: 0.5rem 1rem !important;
-    bottom: 0.6rem !important;
-  }
-
-  .glass-footer,
-  .glass-footer a {
-    font-size: 0.68rem !important;
   }
 }
 
@@ -231,18 +189,14 @@ html[data-theme="dark"] .glass-footer a:active {
   .page__footer {
     background: rgba(255, 255, 255, 0.88) !important;
   }
-
-  html[data-theme="dark"] .page__footer {
-    background: rgba(30, 30, 34, 0.88) !important;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .page__footer {
-    transition: none !important;
+    transition: none;
   }
 
   .page__footer:hover {
-    transform: translateX(-50%) !important;
+    transform: translateX(-50%);
   }
 }
