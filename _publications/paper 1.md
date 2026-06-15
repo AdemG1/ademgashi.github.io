@@ -4,9 +4,9 @@ collection: publications
 category: manuscripts
 permalink: /publication/2025-06-08-dedifferentiation-aging
 excerpt: "Under peer review at Neurobiology of Aging."
-date: 2025-06-08
+date: 2026
 venue: "Neurobiology of Aging"
-citation: "Gashi, A., Ghisletta, P., Raz, N., Daugherty, A. M., & Dahle, C. L. (2025). De-differentiation in Regional Brain Volume Changes Across Aging: The Modifying Role of Genetic, Vascular, and Metabolic Factors. Under review at <i>Neurobiology of Aging</i>."
+citation: "Gashi, A., Ghisletta, P., Raz, N., Daugherty, A. M., & Dahle, C. L. (2026). De-differentiation in Regional Brain Volume Changes Across Aging: The Modifying Role of Genetic, Vascular, and Metabolic Factors. Under review at <i>Neurobiology of Aging</i>."
 ---
 
 This manuscript is currently under peer review at *Neurobiology of Aging*.
