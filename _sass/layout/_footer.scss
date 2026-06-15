@@ -3,7 +3,7 @@
    ========================================================================== */
 .page__footer {
   @include clearfix;
-  background-color: transparent; /* was var(--global-footer-bg-color); transparent so .glass-footer shows through */
+  background-color: var(--global-footer-bg-color);
   color: var(--global-text-color-light);
   float: left;
   margin-left: 0;
@@ -75,29 +75,6 @@
   .social-icons {
     a {
       white-space: nowrap;
-    }
-  }
-}
-
-/* ==========================================================================
-   GLASS FOOTER (custom)
-   ========================================================================== */
-.glass-footer {
-  background: rgba(255, 255, 255, 0.1); /* lower 0.1 = more transparent */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);  /* Safari support */
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 0.75em 1em;
-  font-size: $type-size-7;              /* smaller text, matches copyright */
-  text-align: center;
-
-  a {
-    color: inherit;        /* matches the copyright text, not theme blue */
-    font-weight: inherit;  /* removes the bold */
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
     }
   }
 }
