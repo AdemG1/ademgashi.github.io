@@ -58,7 +58,7 @@ body {
   border-radius: 999px;
 
   /* Thinner frost: more see through, stronger blur compensates for legibility */
-  background: rgba(255, 255, 255, 0.18) !important;
+  background: rgba(255, 255, 255, 0.10) !important;
   -webkit-backdrop-filter: blur(28px) saturate(190%);
   backdrop-filter: blur(28px) saturate(190%);
 
@@ -140,7 +140,7 @@ body {
   position: relative;
   z-index: 1;
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 0.70rem;
   font-weight: 700;
   line-height: 1.5;
   color: rgba(60, 60, 67, 0.75); /* Apple secondary label color */
@@ -150,7 +150,7 @@ body {
 /* Name and year in Apple system blue, the native Liquid Glass accent */
 .glass-footer a,
 .glass-footer .glass-year {
-  color: #007aff;
+  color: rgba(60, 60, 67, 0.75);
   font-weight: 700;
   text-decoration: none;
   transition: opacity 0.2s ease;
