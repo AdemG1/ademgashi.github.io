@@ -3,7 +3,7 @@ title: "De-differentiation in Regional Brain Volume Changes Across Aging: The Mo
 collection: publications
 permalink: /publication/dedifferentiation-aging
 excerpt: "Under peer review at Neurobiology of Aging"
-date: 2025-06-08
+date: 2026
 venue: "Neurobiology of Aging"
 citation: "Gashi, A., Ghisletta, P., Raz, N., Daugherty, A. M., & Dahle, C. L. De-differentiation in Regional Brain Volume Changes Across Aging: The Modifying Role of Genetic, Vascular, and Metabolic Factors."
 ---
