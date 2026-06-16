@@ -27,4 +27,4 @@ This project investigates whether age related changes in regional brain volumes 
 
 This project examines longitudinal associations among subcortical iron accumulation, brain shrinkage, and fluid intelligence decline using four waves of MRI and cognitive data.
 
-📄 [OSF Project](https://osf.io/z64ba/overview?view_only=bc22f13fe4884790b9bda3d012ed62d1)
+🔗 [View Project](https://osf.io/z64ba/overview?view_only=bc22f13fe4884790b9bda3d012ed62d1)
