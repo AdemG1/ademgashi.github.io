@@ -336,7 +336,7 @@ redirect_from:
 
   <h2>Research Overview</h2>
   <div class="welcome">
-    <p>I am a PhD student in Neuroscience at the University of Geneva, studying how vascular and metabolic health modify changes in brain structure and cognitive function across the adult lifespan. My research integrates longitudinal MRI, cognitive assessments, and biological markers — including blood-based and genetic indicators of vascular health, lifestyle and environmental factors — to characterize individual aging.</p>
+    <p>Adem Gashi is a PhD candidate in Neuroscience at the University of Geneva, studying how vascular and metabolic health shape changes in brain structure and cognitive function across the adult lifespan. His research combines longitudinal MRI, cognitive assessments, and biological markers, including blood-based and genetic indicators of vascular health, alongside lifestyle and environmental factors, to characterize how individuals age.</p>
   </div>
 
   <h2>Research Themes</h2>
