@@ -8,8 +8,6 @@ tags:
   - cognitive neuroscience
 ---
 
-*A roughly 10 minute read on the energy economics of the brain, and the surprising low power mode the cortex may switch into when calories become scarce.*
-
 Your brain weighs about as much as a small melon, yet it eats like a teenager. Even when you are sitting still and thinking about nothing in particular, it burns through energy at a rate that no other organ of its size comes close to. This single fact, that the brain is metabolically expensive, turns out to be one of the most important constraints in all of neuroscience. It shapes how neurons are built, how they signal, how we learn, and, as recent work suggests, how the brain rations its own performance when food becomes scarce.
 
 This post walks through four ideas. Why the brain is so costly to run. Where exactly that energy goes. What it costs to learn. And a question that has only recently been answered with real data. Is there a low power mode of the neocortex in times of food scarcity?
