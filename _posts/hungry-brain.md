@@ -2,7 +2,6 @@
 title: 'The hungry brain: why thinking is so expensive, and what happens when food runs low'
 date: 2026-07-10
 permalink: /posts/2026/07/the-hungry-brain/
-
 tags:
   - brain energy metabolism
   - synaptic transmission
@@ -37,6 +36,10 @@ The single largest expense is synaptic transmission, the work of passing message
 
 The lesson here is subtle but important. Most of the brain's energy is not spent thinking a thought in some abstract sense. It is spent on the physical machinery of communication, the synapses. And because synapses are where learning happens, this fact connects directly to the cost of learning itself.
 
+![Breakdown of the brain's signaling energy budget, showing synaptic transmission as the largest share, followed by action potentials and resting potential maintenance](/images/hungry-brain-1.png)
+
+*__Fig. 1.__ Where the brain's energy goes. Adapted from Harris, Jolivet, & Attwell (2012).*
+
 The cost of learning
 ======
 
@@ -58,6 +61,10 @@ For invertebrates, the answer was already suggestive (Plaçais and Preat, 2013).
 Using detailed recordings from individual neurons and two photon imaging of cortical activity, they followed what happened when mice were food restricted until they lost about 15 percent of their body weight. The cortex did indeed shift into something very much like a low power mode. Neurons reduced the conductance of their excitatory AMPA receptors, which cut the ATP spent on synaptic currents by around 29 percent. Cleverly, the neurons kept firing at roughly normal rates by compensating in other ways, raising their input resistance and slightly depolarizing their resting voltage. From the outside, then, the cortex looked like it was working normally.
 
 But the savings were not free. Running the synapses on a budget made the neurons' responses noisier and less precise. The tuning of visual neurons, meaning how sharply they distinguish one line orientation from another, broadened by about 32 percent, and the animals became measurably worse at fine visual discrimination (Padamsey et al., 2022). In plain terms, the hungry cortex traded acuity for economy. It kept the lights on but turned down the resolution.
+
+![Comparison of synaptic ATP use and orientation tuning width in control versus food restricted mouse visual cortex, showing reduced energy use alongside broader, less precise tuning](/images/hungry-brain-2.png)
+
+*__Fig. 2.__ The trade off between energy savings and coding precision in food restricted mouse visual cortex. Adapted from Padamsey, Katsanevaki, Dupuy, & Rochefort (2022).*
 
 What links body fat to brain performance here is a hormone called leptin. Leptin is released by fat tissue and signals how much energy the body has in reserve, so when fat stores fall, leptin falls too. Padamsey and colleagues found that this drop in leptin was the trigger for the cortex's energy saving changes. Remarkably, giving the food restricted mice supplemental leptin restored their coding precision (Padamsey et al., 2022). The brain, it seems, is listening to the body's fuel gauge and adjusting its own performance accordingly. This is the work that earned the evocative description, in Quanta Magazine, of a brain low power mode that blunts the senses.
 
@@ -94,3 +101,4 @@ Plaçais, P.-Y., & Preat, T. (2013). To favor survival under food shortage, the 
 Sengupta, B., Stemmler, M., Laughlin, S. B., & Niven, J. E. (2010). Action potential energy efficiency varies among neuron types in vertebrates and invertebrates. *PLoS Computational Biology, 6*(7), e1000840. <https://doi.org/10.1371/journal.pcbi.1000840>
 
 </div>
+
