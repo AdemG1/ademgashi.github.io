@@ -1,13 +1,11 @@
 ---
-title: 'The hungry brain: why thinking is so expensive, and what happens when food runs low'
-date: 2026-07-10
+title: 'The hungry brain'
+date: 2026-07-09
 permalink: /posts/2026/07/the-hungry-brain/
 tags:
   - brain energy metabolism
-  - synaptic transmission
   - leptin
   - cognitive neuroscience
-  - food scarcity
 ---
 
 *A roughly 10 minute read on the energy economics of the brain, and the surprising low power mode the cortex may switch into when calories become scarce.*
@@ -77,8 +75,6 @@ Step back, and a coherent picture emerges. The brain is one of the most energy e
 
 For anyone interested in the brain, the take home is that cognition cannot be separated from energy. How sharply you see, how well you remember, perhaps even how clearly you think, may depend in part on how recently, and how well, you have eaten. The brain is not a tireless computer running at a fixed clock speed. It is a living, expensive organ, constantly negotiating between the information it would like to process and the energy it can actually afford.
 
-*Note on the science: figures such as 20 percent of resting energy and the synaptic share of the signaling budget are well established estimates that vary somewhat across studies and methods, so they are best read as robust approximations rather than exact constants. The food restriction findings described here come primarily from the mouse visual cortex. While they fit a broader pattern seen across species, caution is warranted before assuming the numbers transfer directly to humans.*
-
 References
 ------
 
@@ -102,3 +98,4 @@ Sengupta, B., Stemmler, M., Laughlin, S. B., & Niven, J. E. (2010). Action poten
 
 </div>
 
+*Note on the science: figures such as 20 percent of resting energy and the synaptic share of the signaling budget are well established estimates that vary somewhat across studies and methods, so they are best read as robust approximations rather than exact constants. The food restriction findings described here come primarily from the mouse visual cortex. While they fit a broader pattern seen across species, caution is warranted before assuming the numbers transfer directly to humans.*
