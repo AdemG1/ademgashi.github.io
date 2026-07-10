@@ -1,5 +1,5 @@
 ---
-title: 'The hungry brain'
+title: 'The Hungry Brain: Why Thinking Is So Expensive, and What Happens When Food Runs Low'
 date: 2026-07-09
 permalink: /posts/2026/07/the-hungry-brain/
 tags:
@@ -21,6 +21,10 @@ Let us start with the headline number. The adult human brain accounts for only a
 
 To appreciate how lopsided this is, it helps to compare the brain to other organs. By mass, the brain is a minor player. Skeletal muscle and fat dominate the body. But when you look at resting energy expenditure rather than mass, the picture flips dramatically. The brain jumps from contributing under 2 percent of body mass to consuming on the order of 20 percent of resting energy, which puts it in the same metabolic league as the liver, heart, and kidneys despite being far smaller (Padamsey and Rochefort, 2023). Gram for gram, neural tissue is one of the most energy hungry tissues your body maintains.
 
+![Pie charts comparing the brain's share of total body mass, about 2 percent, with its share of resting energy expenditure, about 21 percent](/images/hungry_brain_1.png)
+
+*__Fig. 1.__ The brain is a minor player by mass but a major one by energy use. Adapted from Padamsey & Rochefort (2023).*
+
 Why is the brain so costly? The short answer is that thinking is electrical work, and electrical work costs energy. Neurons constantly pump charged ions across their membranes to maintain the voltage differences they use to compute and communicate. Every signal a neuron sends, and every signal it receives, runs down those gradients, and the cell must then spend energy to pump them back up again. That energy comes in the form of a molecular fuel called ATP, short for adenosine triphosphate. The brain is, in effect, paying a continuous electricity bill just to stay ready to process information.
 
 This is not a uniquely human extravagance. Across rodents and primates, the energy a brain uses scales in a remarkably orderly way with its number of neurons, so that each neuron costs roughly the same to run regardless of the size of the animal (Herculano-Houzel, 2011). The human brain is expensive not because our neurons are unusually greedy, but because we have so many of them. The bill is simply the sum of a vast number of small, fixed costs.
@@ -34,9 +38,9 @@ The single largest expense is synaptic transmission, the work of passing message
 
 The lesson here is subtle but important. Most of the brain's energy is not spent thinking a thought in some abstract sense. It is spent on the physical machinery of communication, the synapses. And because synapses are where learning happens, this fact connects directly to the cost of learning itself.
 
-![Breakdown of the brain's signaling energy budget, showing synaptic transmission as the largest share, followed by action potentials and resting potential maintenance](/images/hungry-brain-1.png)
+![Pie chart breaking down the brain's signaling energy budget: synaptic transmission 64 percent, action potentials 22 percent, neural resting potential 11 percent, glial resting potential 3 percent](/images/hungry_brain_2.png)
 
-*__Fig. 1.__ Where the brain's energy goes. Adapted from Harris, Jolivet, & Attwell (2012).*
+*__Fig. 2.__ Where the brain's signaling energy goes. Adapted from Harris, Jolivet, & Attwell (2012).*
 
 The cost of learning
 ======
@@ -60,10 +64,6 @@ Using detailed recordings from individual neurons and two photon imaging of cort
 
 But the savings were not free. Running the synapses on a budget made the neurons' responses noisier and less precise. The tuning of visual neurons, meaning how sharply they distinguish one line orientation from another, broadened by about 32 percent, and the animals became measurably worse at fine visual discrimination (Padamsey et al., 2022). In plain terms, the hungry cortex traded acuity for economy. It kept the lights on but turned down the resolution.
 
-![Comparison of synaptic ATP use and orientation tuning width in control versus food restricted mouse visual cortex, showing reduced energy use alongside broader, less precise tuning](/images/hungry-brain-2.png)
-
-*__Fig. 2.__ The trade off between energy savings and coding precision in food restricted mouse visual cortex. Adapted from Padamsey, Katsanevaki, Dupuy, & Rochefort (2022).*
-
 What links body fat to brain performance here is a hormone called leptin. Leptin is released by fat tissue and signals how much energy the body has in reserve, so when fat stores fall, leptin falls too. Padamsey and colleagues found that this drop in leptin was the trigger for the cortex's energy saving changes. Remarkably, giving the food restricted mice supplemental leptin restored their coding precision (Padamsey et al., 2022). The brain, it seems, is listening to the body's fuel gauge and adjusting its own performance accordingly. This is the work that earned the evocative description, in Quanta Magazine, of a brain low power mode that blunts the senses.
 
 So the answer to the question is yes. The neocortex does appear to have a low power mode, and it is governed by the body's energy signals. It is not a malfunction but an adaptation, a sensible way to keep an expensive organ running when the calories that power it are uncertain.
@@ -75,7 +75,7 @@ Step back, and a coherent picture emerges. The brain is one of the most energy e
 
 For anyone interested in the brain, the take home is that cognition cannot be separated from energy. How sharply you see, how well you remember, perhaps even how clearly you think, may depend in part on how recently, and how well, you have eaten. The brain is not a tireless computer running at a fixed clock speed. It is a living, expensive organ, constantly negotiating between the information it would like to process and the energy it can actually afford.
 
-*Note on the science: figures such as 20 percent of resting energy and the synaptic share of the signaling budget are well established estimates that vary somewhat across studies and methods, so they are best read as robust approximations rather than exact constants. The food restriction findings described here come primarily from the mouse visual cortex. While they fit a broader pattern seen across species, caution is warranted before assuming the numbers transfer directly to humans.*
+***Note on the science:** figures such as 20 percent of resting energy and the synaptic share of the signaling budget are well established estimates that vary somewhat across studies and methods, so they are best read as robust approximations rather than exact constants. The food restriction findings described here come primarily from the mouse visual cortex. While they fit a broader pattern seen across species, caution is warranted before assuming the numbers transfer directly to humans.*
 
 References
 ------
@@ -99,4 +99,3 @@ Plaçais, P.-Y., & Preat, T. (2013). To favor survival under food shortage, the 
 Sengupta, B., Stemmler, M., Laughlin, S. B., & Niven, J. E. (2010). Action potential energy efficiency varies among neuron types in vertebrates and invertebrates. *PLoS Computational Biology, 6*(7), e1000840. <https://doi.org/10.1371/journal.pcbi.1000840>
 
 </div>
-
