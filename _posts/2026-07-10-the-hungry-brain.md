@@ -38,7 +38,7 @@ The single largest expense is synaptic transmission, the work of passing message
 
 The lesson here is subtle but important. Most of the brain's energy is not spent thinking a thought in some abstract sense. It is spent on the physical machinery of communication, the synapses. And because synapses are where learning happens, this fact connects directly to the cost of learning itself.
 
-![Pie chart breaking down the brain's signaling energy budget: synaptic transmission 64 percent, action potentials 22 percent, neural resting potential 11 percent, glial resting potential 3 percent](/images/hungry_brain_2.png)
+<img src="/images/hungry_brain_2.png" alt="Pie chart breaking down the brain's signaling energy budget: synaptic transmission 64 percent, action potentials 22 percent, neural resting potential 11 percent, glial resting potential 3 percent" width="450">
 
 *__Fig. 2.__ Where the brain's signaling energy goes. Adapted from Harris, Jolivet, & Attwell (2012).*
 
