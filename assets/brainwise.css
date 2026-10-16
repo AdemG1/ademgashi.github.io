@@ -13,3 +13,12 @@ html[data-theme="dark"] .bw{--ink:#f2f4f7;--muted:#c4ccd6;--paper:#3a3a3a;--pane
 #main .bw{width:100%;max-width:1380px;margin:0 auto;padding:28px 44px 110px}
 @media(max-width:900px){#main .bw{padding:22px 22px 100px}}
 @media(max-width:570px){#main .bw{padding:20px 14px 100px}}
+
+/* Brainwise closing signature, aligned with the existing page palette. */
+.bw .bw-closing{display:flex;justify-content:space-between;align-items:center;gap:16px 28px;border-top:1px solid var(--rule);margin-top:12px;padding:20px 0 0;color:var(--muted);font-family:inherit;font-size:11px;line-height:1.7}
+.bw .bw-closing p{margin:0;font-size:inherit;line-height:inherit}
+.bw .bw-closing-name{font-weight:600;color:var(--ink)}
+.bw .bw-closing-divider{color:var(--accent);padding:0 6px}
+.bw .bw-closing a{color:var(--primary);text-decoration:none}
+.bw .bw-closing a:hover{text-decoration:underline}
+@media(max-width:600px){.bw .bw-closing{flex-direction:column;align-items:flex-start;gap:8px;padding-top:16px}}
