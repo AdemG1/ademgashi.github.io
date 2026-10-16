@@ -20,5 +20,7 @@ main:
   - title: "CV"
     url: /cv/
     
+  - title: "Brainwise"
+    url: /brainwise/
   # - title: "CV"
   #   url: /cv-json/
