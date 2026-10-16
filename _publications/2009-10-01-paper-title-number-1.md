@@ -9,6 +9,6 @@ venue: "Neurobiology of Aging"
 citation: "Gashi, A., Raz, N., Daugherty, A. M., Dahle, C. L., & Ghisletta, P. (2026). De-differentiation in Regional Brain Volume Changes Across Aging: The Modifying Role of Genetic, Vascular, and Metabolic Factors."
 ---
 
-This manuscript is currently under peer review at *Neurobiology of Aging*.
+This manuscript is currently under peer review.
 
 It investigates whether age related changes in regional brain volumes become increasingly shared across the adult lifespan and whether genetic, vascular, and metabolic factors modify these trajectories.
