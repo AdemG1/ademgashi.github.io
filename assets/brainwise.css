@@ -6,3 +6,10 @@ html[data-theme="dark"] .bw{--ink:#f2f4f7;--muted:#c4ccd6;--paper:#3a3a3a;--pane
 
 .bw .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .page__title{display:none}.page{width:100%!important;padding-right:0!important}.page__content{max-width:none}.bw{padding-left:0;padding-right:0}.bw h1,.bw h2,.bw h3{border-bottom:0}.bw .brain-svg{margin:0}.bw input[type="checkbox"]{width:auto}.bw summary{list-style:disclosure-closed}.bw details[open]>summary{list-style:disclosure-open}
+/* Match the standalone explorer's width without the article sidebar gutter. */
+#main{width:100%!important;max-width:1380px!important;padding:0!important;margin:0 auto!important;float:none!important}
+#main>.page{width:100%!important;max-width:none!important;float:none!important;margin:0!important;padding:0!important}
+#main .page__inner-wrap,#main .page__content{width:100%;max-width:none;margin:0;padding:0}
+#main .bw{width:100%;max-width:1380px;margin:0 auto;padding:28px 44px 110px}
+@media(max-width:900px){#main .bw{padding:22px 22px 100px}}
+@media(max-width:570px){#main .bw{padding:20px 14px 100px}}
