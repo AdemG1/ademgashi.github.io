@@ -14,4 +14,54 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
 
+
+<style>
+  #theme-toggle .site-theme-switch {
+    position: relative; display: inline-block; flex: 0 0 auto;
+    width: 64px; height: 36px; padding: 0; margin: 0;
+    border: 2px solid #d9dadd; border-radius: 999px;
+    background: #fafafa; color: #30363b; cursor: pointer;
+    box-sizing: border-box; vertical-align: middle;
+    appearance: none; overflow: hidden;
+  }
+  #theme-toggle .site-theme-switch::before,
+  #theme-toggle .site-theme-switch::after { content: none; }
+  #theme-toggle .site-theme-thumb {
+    position: absolute; left: 2px; top: 2px; width: 28px; height: 28px;
+    display: grid; place-items: center; border-radius: 50%;
+    background: #e1e2e5; transform: translateX(0);
+    transition: transform 220ms ease, background-color 220ms ease;
+    pointer-events: none;
+  }
+  #theme-toggle .site-theme-thumb svg { width: 21px; height: 21px; }
+  #theme-toggle .site-theme-moon, #theme-toggle #theme-icon { display: none; }
+  html[data-theme="dark"] #theme-toggle .site-theme-switch {
+    background: #25282b; border-color: #42464b; color: #e2e5e9;
+  }
+  html[data-theme="dark"] #theme-toggle .site-theme-thumb {
+    transform: translateX(28px); background: #42464b;
+  }
+  html[data-theme="dark"] #theme-toggle .site-theme-sun { display: none; }
+  html[data-theme="dark"] #theme-toggle .site-theme-moon { display: block; }
+  #theme-toggle .site-theme-switch:focus-visible { outline: 2px solid #4a6fa5; outline-offset: 4px; }
+  @media (prefers-reduced-motion: reduce) { #theme-toggle .site-theme-thumb { transition: none; } }
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.getElementById("theme-toggle");
+  if (!container) return;
+  container.innerHTML = '<button type="button" class="site-theme-switch" role="switch" aria-label="Dark mode"><i id="theme-icon" aria-hidden="true"></i><span class="site-theme-thumb" aria-hidden="true"><svg class="site-theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4" fill="currentColor" stroke="none"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/></svg><svg class="site-theme-moon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 14A8.5 8.5 0 0 1 10 3.5 8.5 8.5 0 1 0 20.5 14Z"/></svg></span></button>';
+  const button = container.querySelector("button");
+  function syncSwitch() {
+    const dark = document.documentElement.dataset.theme === "dark";
+    button.setAttribute("aria-checked", String(dark));
+    button.title = dark ? "Switch to light mode" : "Switch to dark mode";
+  }
+  syncSwitch();
+  new MutationObserver(syncSwitch).observe(document.documentElement, {
+    attributes: true, attributeFilter: ["data-theme"]
+  });
+});
+</script>
+
 <!-- end custom head snippets -->
