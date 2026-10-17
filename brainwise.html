@@ -11,7 +11,18 @@ permalink: /brainwise/
   {% include head/custom.html %}
   <style>
     html, body { margin: 0; min-height: 100%; width: 100%; overflow-x: clip; }
-    #theme-icon.fa-sun::before { content: "●"; font-family: Arial, sans-serif; font-size: 21px; line-height: 1; }
+    #theme-toggle a { position: relative; display: inline-flex; align-items: center; width: 54px; height: 32px; padding: 0 !important; border: 2px solid #d8dadd; border-radius: 20px; background: #fafafa; cursor: pointer; box-sizing: border-box; vertical-align: middle; }
+    #theme-toggle a::before, #theme-toggle a::after { display: none !important; }
+    #theme-toggle #theme-icon { display: none; }
+    .bw-theme-knob { position: absolute; left: 2px; top: 2px; display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: #e0e1e4; color: #34383b; transition: transform .2s ease, background .2s ease; }
+    .bw-theme-knob svg { width: 18px; height: 18px; }
+    .bw-theme-knob .bw-theme-moon { display: none; }
+    html[data-theme="dark"] #theme-toggle a { border-color: #45494e; background: #25282b; }
+    html[data-theme="dark"] .bw-theme-knob { transform: translateX(22px); background: #45494e; color: #e2e5e9; }
+    html[data-theme="dark"] .bw-theme-knob .bw-theme-sun { display: none; }
+    html[data-theme="dark"] .bw-theme-knob .bw-theme-moon { display: block; }
+    #theme-toggle a:focus-visible { outline: 2px solid #4a6fa5; outline-offset: 4px; }
+    @media (prefers-reduced-motion: reduce) { .bw-theme-knob { transition: none; } }
     #brainwise-frame { display: block; box-sizing: border-box; max-width: 100%; width: 100%; min-height: calc(100vh - 80px); border: 0; }
   </style>
 </head>
@@ -28,6 +39,18 @@ permalink: /brainwise/
       const label = isDark ? "Switch to light mode" : "Switch to dark mode";
       if (themeButton) {
         themeButton.setAttribute("aria-label", label);
+        themeButton.setAttribute("role", "switch");
+        themeButton.setAttribute("aria-checked", String(isDark));
+        themeButton.tabIndex = 0;
+        if (!themeButton.querySelector(".bw-theme-knob")) {
+          themeButton.insertAdjacentHTML("beforeend", '<span class="bw-theme-knob" aria-hidden="true"><svg class="bw-theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4" fill="currentColor" stroke="none"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/></svg><svg class="bw-theme-moon" viewBox="0 0 24 24" fill="currentColor"><path d="M9 2a10 10 0 1 1-1 19 10 10 0 0 0 1-19Z"/></svg></span>');
+          themeButton.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              themeButton.click();
+            }
+          });
+        }
         themeButton.removeAttribute("aria-labelledby");
         themeButton.title = label;
       }
