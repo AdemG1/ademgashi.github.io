@@ -29,6 +29,17 @@ permalink: /brainwise/
       if (!doc) return;
       const previewBar = doc.querySelector(".preview-bar");
       if (previewBar) previewBar.remove();
+      // Remove the reference comparison and its accompanying note.
+      doc.querySelectorAll(".references details").forEach((section) => {
+        const summary = section.querySelector("summary");
+        if (summary && summary.textContent.trim() === "Compare with an anatomical reference illustration") {
+          const note = section.nextElementSibling;
+          if (note && note.matches("p.fineprint") && note.textContent.trim().startsWith("MRI derived 3D surfaces")) {
+            note.remove();
+          }
+          section.remove();
+        }
+      });
       syncTheme();
       let lastHeight = 0;
       function resizeFrame() {
