@@ -14,28 +14,4 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
 
-<!-- Restore the Brainwise hero wording shown in the earlier design. -->
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  var hero = document.querySelector(".bw .hero-bw");
-  if (!hero) return;
-
-  var title = hero.querySelector("h1");
-  if (title) title.innerHTML = 'Brainwise.<br><em>A closer look within.</em>';
-
-  var description = hero.querySelector("p");
-  if (description) {
-    description.textContent = "Explore the anatomy behind memory, thought, and movement—and the different ways our brains change with age.";
-  }
-
-  var edition = hero.querySelector(".edition");
-  if (edition) {
-    var caption = Array.from(edition.childNodes).find(function (node) {
-      return node.nodeType === Node.TEXT_NODE && node.textContent.trim();
-    });
-    if (caption) caption.textContent = "\n      Four anatomical perspectives · An anatomical explorer\n    ";
-  }
-});
-</script>
-
 <!-- end custom head snippets -->
