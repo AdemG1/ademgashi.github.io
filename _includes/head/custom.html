@@ -70,4 +70,21 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+
+<style>
+  @media (min-width: 1100px) {
+    #site-nav .visible-links { margin-left: auto; margin-right: 0; }
+    #site-nav .visible-links > .masthead__menu-item--lg {
+      position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+      padding-right: 0;
+    }
+    #site-nav .visible-links > .masthead__menu-item--lg a { margin-left: 0; }
+    #site-nav #theme-toggle { padding-left: 16px; }
+    .brainwise-page .masthead__inner-wrap {
+      box-sizing: border-box; width: 100%; max-width: 1380px;
+      margin-left: auto; margin-right: auto; padding-left: 44px; padding-right: 44px;
+    }
+  }
+</style>
+
 <!-- end custom head snippets -->
