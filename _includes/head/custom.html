@@ -87,4 +87,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 </style>
 
+
+<style>
+  @media (max-width: 1099px) {
+    #site-nav .visible-links > #theme-toggle { width: 74px; min-width: 74px; }
+    #site-nav #theme-toggle .site-theme-switch {
+      position: absolute; right: calc(2.5rem + 10px); top: 50%;
+      transform: translateY(-50%);
+    }
+    #site-nav:has(> button.hidden) #theme-toggle .site-theme-switch { right: 0; }
+  }
+</style>
+
 <!-- end custom head snippets -->
