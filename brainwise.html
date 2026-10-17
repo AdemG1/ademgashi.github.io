@@ -11,6 +11,7 @@ permalink: /brainwise/
   {% include head/custom.html %}
   <style>
     html, body { margin: 0; min-height: 100%; width: 100%; overflow-x: clip; }
+    #theme-icon.fa-sun::before { content: "●"; font-family: Arial, sans-serif; font-size: 21px; line-height: 1; }
     #brainwise-frame { display: block; box-sizing: border-box; max-width: 100%; width: 100%; min-height: calc(100vh - 80px); border: 0; }
   </style>
 </head>
@@ -21,16 +22,28 @@ permalink: /brainwise/
   <script>
     const frame = document.getElementById("brainwise-frame");
     function syncTheme() {
+      const isDark = document.documentElement.dataset.theme === "dark";
+      const themeButton = document.querySelector("#theme-toggle a");
+      const themeIcon = document.getElementById("theme-icon");
+      const label = isDark ? "Switch to light mode" : "Switch to dark mode";
+      if (themeButton) {
+        themeButton.setAttribute("aria-label", label);
+        themeButton.removeAttribute("aria-labelledby");
+        themeButton.title = label;
+      }
+      if (themeIcon) themeIcon.title = label;
       const doc = frame.contentDocument;
       if (doc) doc.documentElement.dataset.theme = document.documentElement.dataset.theme || "light";
     }
+    syncTheme();
     frame.addEventListener("load", () => {
       const doc = frame.contentDocument;
       if (!doc) return;
       const responsiveStyle = doc.createElement("style");
       responsiveStyle.textContent = `
         html, body { width: 100%; max-width: 100%; overflow-x: clip; }
-        #main .bw { box-sizing: border-box; }
+        #main .bw { box-sizing: border-box; padding-top: 12px; }
+        .bw .hero-bw { padding-top: 0; }
         .bw .hero-bw > div { min-width: 0; }
         .bw p, .bw .ref, .bw .detail-sources { overflow-wrap: anywhere; }
         @media (max-width: 570px) {
