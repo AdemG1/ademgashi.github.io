@@ -14,7 +14,7 @@ permalink: /brainwise/
     #brainwise-frame { display: block; box-sizing: border-box; max-width: 100%; width: 100%; min-height: calc(100vh - 80px); border: 0; }
   </style>
 </head>
-<body>
+<body class="brainwise-page">
   {% include masthead.html %}
   <iframe id="brainwise-frame" src="{{ '/brainwise-v' | append: brainwise_version | append: '.html' | relative_url }}" title="Brainwise version {{ brainwise_version }} interactive brain explorer"></iframe>
   {% include scripts.html %}
