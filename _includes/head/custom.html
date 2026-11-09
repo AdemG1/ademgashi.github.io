@@ -134,4 +134,39 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+
+<!-- Brainwise responsive containment patch, 2026-11-09.
+     Scoped to Brainwise; does not modify the interactive anatomy data or scripts. -->
+<style>
+  /* Never allow a wide anatomy panel to shift the whole document sideways. */
+  html:has(.brainwise-page), body.brainwise-page { max-width: 100%; overflow-x: clip; }
+  .brainwise-page, .brainwise-page main, .brainwise-page .page,
+  .brainwise-page .page__inner-wrap, .brainwise-page .page__content {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .brainwise-page .page__content > section,
+  .brainwise-page .page__content > div {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  /* Wide text and controls must wrap instead of forcing horizontal scrolling. */
+  .brainwise-page :is(.tabs, .view-switcher, .view-controls, .explorer-controls, .brain-controls) {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  .brainwise-page :is(.explorer-grid, .anatomy-grid, .brain-grid, .region-grid) > * {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  @media (max-width: 860px) {
+    .brainwise-page :is(.explorer-grid, .anatomy-grid, .brain-grid, .region-grid) {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>
+
 <!-- end custom head snippets -->
